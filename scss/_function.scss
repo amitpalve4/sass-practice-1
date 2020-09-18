@@ -11,6 +11,12 @@
 
 }
 
+@mixin flexSpaceBet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 // Transform
 @mixin transform($property) {
 
@@ -27,3 +33,8 @@
     transition: $property;
     
 }
+
+@function weight($weight-name){
+    @return map-get($font-weight , $weight-name)
+}
+
